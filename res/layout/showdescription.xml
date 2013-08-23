@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <!-- <TextView  
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:text=""
+    android:id="@+id/storybox"
+    /> -->
+    
+	<TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dip"
+                android:padding="5dip"
+                android:text="Title"/>
+        
+        <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:textSize="10dip"
+                android:padding="5dip"
+                android:text="Date"/>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+        
+        <ImageView android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:padding="5dip"
+		android:id="@+id/imageView1"
+		android:layout_width="wrap_content"></ImageView>
+              
+        <TextView
+                android:id="@+id/txtDescription"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="15dip"
+                android:padding="5dip"
+                android:text="Description"/>
+       </LinearLayout>         
+           <TextView
+                android:id="@+id/link"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="10dip"
+                android:padding="5dip"
+                android:text="Link"
+                android:autoLink="all"/>
+
+<Button
+    android:layout_width="70dip" 
+    android:layout_height="40dip" 
+    android:text="Back"
+	android:id="@+id/back"
+	android:layout_gravity="center"
+	/>
+
+</LinearLayout>

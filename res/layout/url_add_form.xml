@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="#ff000099"
+  android:padding="10dp"
+  >
+  
+	<TextView android:id="@+id/tvTitle" 
+		android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:padding="3dp" 
+	    android:text="RSS Title" 
+	    android:textColor="#ffffffff"/>
+	    
+	<AutoCompleteTextView android:id="@+id/acTitle" 
+    	android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:hint="Eg. bbc news, bbc sports, bbc politics, etc"/>
+        
+    <TextView android:id="@+id/tvUrl" 
+		android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:padding="3dp"  
+	    android:text="RSS URL" 
+	    android:textColor="#ffffffff"/>
+	    
+	<AutoCompleteTextView android:id="@+id/acUrl" 
+    	android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:hint="Eg. http://feeds.bbci.co.uk/news/rss.xml"/>
+        
+    <TextView android:id="@+id/tvCateogry" 
+		android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:padding="3dp"  
+	    android:text="RSS Category" 
+	    android:textColor="#ffffffff"/>
+	    
+	<AutoCompleteTextView android:id="@+id/acCategory" 
+    	android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:hint="Eg. sports, politics, etc"/>
+    
+    <LinearLayout android:orientation="horizontal" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:padding="5dp"  >
+        
+		<Button android:id="@+id/btnEnter" 
+			android:layout_width="100dp" 
+		    android:layout_height="wrap_content" 
+		    android:text="Enter" />
+		
+		<Button android:id="@+id/btnCancel" 
+			android:layout_width="100dp" 
+		    android:layout_height="wrap_content"
+		    android:text="Cancel" />
+    </LinearLayout>
+</LinearLayout>
